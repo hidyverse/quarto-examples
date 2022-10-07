@@ -1,6 +1,6 @@
 ---
 title: "Example Quarto Report"
-author: " "
+author: "your name here"
 date: "`r Sys.Date()`"
 format: html
 execute: 
@@ -106,6 +106,9 @@ mockdata %>%
 
 ```{ojs}
 //  First we create an {ojs} cell that reads in our data using `FileAttachment`
+
+d3 = require("d3@7")
+topojson = require("topojson")
 
 data = FileAttachment("lungdat_v1.csv").csv()
 ```
